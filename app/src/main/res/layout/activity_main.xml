@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <FrameLayout
         android:id="@+id/main_activity_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="1dp"
-        app:layout_constraintBottom_toTopOf="@id/main_activity_navigation"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/main_activity_navigation"
+        android:layout_alignParentTop="true" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_activity_navigation"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/navigation_background"
-        android:elevation="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:elevation="4dp"
         app:menu="@menu/main_menu" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
