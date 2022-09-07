@@ -47,7 +47,7 @@ public class SqliteDatabase extends SQLiteOpenHelper {
 
     public void insertHistory(History history) {
         ContentValues cv = new ContentValues();
-        cv.put(HISTORY_COL_LINK, history.getLink());
+        cv.put(HISTORY_COL_LINK, history.getData());
         cv.put(HISTORY_COL_DATE, history.getDate());
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.insert(HISTORY_TABLE_NAME, null, cv);
@@ -71,9 +71,10 @@ public class SqliteDatabase extends SQLiteOpenHelper {
         return historyList;
     }
 
-    public void deleteHistory() {
+
+    public void deleteHistory(String id) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
-        sqLiteDatabase.delete(HISTORY_TABLE_NAME, null, null);
+        sqLiteDatabase.delete(HISTORY_TABLE_NAME, HISTORY_COL_ID+" = ?", new String[]{id});
         sqLiteDatabase.close();
     }
 }

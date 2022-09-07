@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/drawable/black_circle.xml" value="0.133" />
+        <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/drawable/green_gradient_background.xml" value="0.133" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/drawable/navigation_background.xml" value="0.133" />
+        <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/drawable/orange_gradient_background.xml" value="0.133" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/layout/activity_scanner.xml" value="0.1796875" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/layout/fragment_history.xml" value="0.1859375" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/layout/fragment_scan.xml" value="0.1859375" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/layout/history_item.xml" value="0.19895833333333332" />
         <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/menu/main_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Arqavan/AndroidStudioProjects/QRScanner/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.133" />
       </map>
     </option>
   </component>

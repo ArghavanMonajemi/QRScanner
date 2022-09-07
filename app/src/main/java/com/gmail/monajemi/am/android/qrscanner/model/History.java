@@ -2,16 +2,16 @@ package com.gmail.monajemi.am.android.qrscanner.model;
 
 public class History {
     private int id;
-    String link;
+    String data;
     String date;
 
-    public History(int id, String link, String date) {
+    public History(int id, String data, String date) {
         this.id = id;
-        this.link = link;
+        this.data = data;
         this.date = date;
     }
-    public History( String link, String date) {
-        this.link = link;
+    public History(String data, String date) {
+        this.data = data;
         this.date = date;
     }
 
@@ -19,8 +19,8 @@ public class History {
         return id;
     }
 
-    public String getLink() {
-        return link;
+    public String getData() {
+        return data;
     }
 
     public String getDate() {

@@ -36,7 +36,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
     @Override
     public void onBindViewHolder(@NonNull HistoryViewHolder historyViewHolder, int i) {
         History history = historyLisT.get(i);
-        historyViewHolder.link.setText(history.getLink());
+        historyViewHolder.data.setText(history.getData());
         historyViewHolder.date.setText(history.getDate());
     }
 
@@ -45,18 +45,22 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
         return historyLisT.size();
     }
 
+    public History getItemAt(int position){
+        return historyLisT.get(position);
+    }
+
     class HistoryViewHolder extends RecyclerView.ViewHolder {
 
         CardView item;
-        TextView link, date;
+        TextView data, date;
 
         public HistoryViewHolder(@NonNull View itemView) {
             super(itemView);
             item = itemView.findViewById(R.id.history_item);
-            link = itemView.findViewById(R.id.history_item_link);
+            data = itemView.findViewById(R.id.history_item_data);
             date = itemView.findViewById(R.id.history_item_date);
 
-            item.setOnClickListener(view -> onItemClickListener.onItemClick(link.getText().toString()));
+            item.setOnClickListener(view -> onItemClickListener.onItemClick(data.getText().toString()));
         }
     }
 
@@ -65,6 +69,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
     }
 
     public interface OnItemClickListener {
-        void onItemClick(String link);
+        void onItemClick(String data);
     }
 }
