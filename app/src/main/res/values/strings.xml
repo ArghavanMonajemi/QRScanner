@@ -3,12 +3,15 @@
 
     <string name="scan">scan</string>
     <string name="history">history</string>
+    <string name="successful_scan">successfully scanned</string>
+    <string name="scanned_data">Scanned data</string>
+    <string name="ok">OK</string>
+    <string name="open_browser">open link in browser</string>
+    <string name="description">a button to open camera</string>
+    <string name="item_removed">Item removed.</string>
+    <string name="undo">undo</string>
 
     <string name="scan_fragment_tag">Scan fragment</string>
     <string name="history_fragment_tag">History fragment</string>
 
-    <string name="successful_scan">successfully scanned</string>
-    <string name="ok">OK</string>
-    <string name="open_browser">open link in browser</string>
-    <string name="description">a button to open camera</string>
 </resources>
