@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scan">اسکن</string>
+    <string name="history">تاریخچه</string>
+    <string name="successful_scan">اسکن با موفقیت انجام شد</string>
+    <string name="scanned_data">اطلاعات اسکن</string>
+    <string name="ok">تایید</string>
+    <string name="open_browser">بازکردن لینک در مرورگر</string>
+    <string name="item_removed">مورد حذف شد</string>
+    <string name="undo">لغو حذف</string>
+    <string name="app_name">اسکنر</string>
+</resources>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layoutDirection="ltr"
     android:background="@color/sage"
     tools:context=".activity.MainActivity">
 
